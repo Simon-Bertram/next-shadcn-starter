@@ -9,6 +9,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import ProfileButton from "./ProfileButton";
+import AcmeLogo from "../ui/AcmeLogo";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -19,7 +20,8 @@ const navItems = [
 const Header = () => {
   return (
     <header className="bg-gray-800 p-4">
-      <NavigationMenu>
+      <NavigationMenu className="flex justify-between">
+        <AcmeLogo />
         <NavigationMenuList>
           {navItems.map((item) => (
             <NavigationMenuItem key={item.href}>
