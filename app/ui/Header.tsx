@@ -34,8 +34,12 @@ const Header = () => {
               </Link>
             </NavigationMenuItem>
           ))}
+          <NavigationMenuItem>
+            <NavigationMenuLink>
+              <ProfileButton />
+            </NavigationMenuLink>
+          </NavigationMenuItem>
         </NavigationMenuList>
-        <ProfileButton />
       </NavigationMenu>
     </header>
   );
